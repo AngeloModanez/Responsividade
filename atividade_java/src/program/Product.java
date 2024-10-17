@@ -6,7 +6,7 @@ public class Product {
     }
 
     public static void product(int num1, int num2, int result) {
-        if (num2 <= 0) {
+        if (num2 == 0) {
             System.out.println(result);
             return;
         }

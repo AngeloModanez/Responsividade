@@ -6,7 +6,7 @@ public class Sum {
     }
 
     public static void sum(int count, int result) {
-        if (count <= 1) {
+        if (count == 1) {
             result += 1;
             System.out.println(count + " = " + result);
             return;

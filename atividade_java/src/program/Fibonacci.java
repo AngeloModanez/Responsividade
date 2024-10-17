@@ -6,7 +6,7 @@ public class Fibonacci {
     }
 
     public static void fibonacci(int count, int first, int second) {
-        if (count <= 1) {
+        if (count == 1) {
             System.out.println(first);
             return;
         }

@@ -2,7 +2,8 @@ from program import function as func
 
 try:
     while True:
-        choice = int(input(
+        choice = int(
+            input(
                 "\n+-+-+-+-+-+-+-+-+"
                 + "\n| Funções:      |"
                 + "\n| 1 > Factorial |"
@@ -10,11 +11,16 @@ try:
                 + "\n| 3 > Produto   |"
                 + "\n| 4 > Soma      |"
                 + "\n+-+-+-+-+-+-+-+-+"
-                + "\n»»» "))
+                + "\n»»» "
+            )
+        )
         match choice:
             case 1:
                 num = int(input("\nDigite o número para calcular o fatorial: "))
-                func.factorial(num)
+                if num > 0:
+                    func.factorial(num)
+                    
+
             case 2:
                 num = int(input("\nInforme uma sequência desejada: "))
                 func.fibonacci(num)
